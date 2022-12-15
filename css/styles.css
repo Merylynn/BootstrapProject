@@ -46,3 +46,33 @@ header h4 {
 .carousel {
     border: solid #c20c0c;
 }
+
+.img-chef {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.menu-card {
+    width: 350px;
+    height: 450px;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+    width: 200%;
+    /* overflow: none; */
+    overflow-x: scroll;
+}
+
+.menu-card {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  
+  .menu-cards::-webkit-scrollbar {
+    display: none;
+  }
