@@ -6,8 +6,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Archivo Black', sans-serif;
 }
 
-h2 {
-    color: rgb(105, 104, 104);
+.fancy-text {
+    font-family: 'Rock Salt', cursive;
+    font-style: oblique;
+    color: rgb(196, 128, 4);
 }
 
 header h4 {
@@ -42,26 +44,35 @@ header h4 {
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(rgb(58, 44, 44), yellow, rgb(33, 33, 34));
+    background-color: #222324;
     color: white;
 }
 
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .dark-row-content {
     padding: 50px 0;
+    padding-left: 10px;
+    padding-right: 10px;
     border-bottom: 1px ridge;
-    background-color: #5a5757;
+    background-color: #332c2c;
+    color: cornsilk;
 }
 
 .row-chef {
     padding: 50px 0;
 }
 
-.navbar {
+.nav-top {
+    background-color: #222324;
+}
+
+.nav-bottom {
     background-color: #b808088a;
 }
 
@@ -70,10 +81,8 @@ header h4 {
 }
 
 .carousel {
-    object-fit: contain;
     width: 100%;
     max-height: 500px;
-    padding: 0;
 }
 
 .carousel-img {
@@ -85,17 +94,16 @@ header h4 {
     max-height: 500px !important;
   }
 
+  .carousel-row {
+    min-height: 4px !important;
+    width: 100%;
+}
+
 .img-chef {
     display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-.menu-header {
-    font-family: 'Rock Salt', cursive;
-    font-style: oblique;
-    color: rgb(196, 128, 4);
 }
 
 .menu-scroll {
@@ -141,3 +149,7 @@ header h4 {
       height: 175px;
   }
 
+.review-row {
+    min-height: 550px !important;
+    /* width: 100%; */
+}

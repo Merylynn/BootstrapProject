@@ -23,23 +23,33 @@
 
 <body>
 
-    <header class="jumbotron jumbotron-fluid">
+    <nav class="navbar nav-top navbar-expand-sm navbar-dark navbar-top">
         <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 media">
-                    <img src="img/ronin-logo.jpeg" class="img-fluid rounded-circle mr-3"/>
-                </div>
-                <div class="col media-body">
-                    <h1 class="mt-0">ROAMING RONIN</h1>
-                    <h4 class="text-left">Asian Inspired...
-                        Texas Made.</h4>
-                </div>
+            <span data-toggle="collapse"
+            data-target="#navTop">
+        </span>
+            <div class="collapse navbar-collapse flex-row-reverse d-none" id="navTop">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-light" href="tel:3614624273""><i class="fa fa-phone"></i>(361) 462-4273</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#footer">Hours: 11:00am - 10:00pm</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="https://www.instagram.com/roaming_ronin_cctx/"><i class="fa fa-instagram"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="https://www.facebook.com/RoamingRoninCC/"><i class="fa fa-facebook"></i></a></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar nav-bottom navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
+            <a class="navbar-brand" href="#"><img class="rounded-circle" src="img/ronin-logo.jpeg"
+                height="40" width="40"/></a>
+                <div class="col media-body">
+                    <h4 class="mt-0">ROAMING RONIN</h4>
+                <div class="col">
+                    <h8 class="text-left d-none d-lg-block">Asian Inspired...
+                        Texas Made.</h8>
+                </div>
+                </div>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
             data-target="#roninNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -49,16 +59,15 @@
                     <li class="nav-item active"><a class="nav-link text-muted" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
                     <li class="nav-item"><a class="nav-link text-light" href="aboutus.html"><i class="fa fa-solid fa-user fa-lg"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link text-light" href="menu.html"><i class="fa fa-solid fa-utensils fa-lg"></i> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container container-fluid">
-         <div class="row carousel">
+         <div class="row carousel-row">
             <div class="col-sm-12">
-                <div id="homeCarousel" class="slide" data-ride="carousel">
+                <div id="homeCarousel" class=" carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
@@ -89,18 +98,50 @@
         </div>
 
         <div class="row row-content">
-            <div class="col">
-                <h2 class="text-center">Explore Our Menu</h2>
+            <div class="col-12">
+                <h1 class="text-center fancy-text">Explore Our Menu</h1>
+                <img src="img/chopsticks.png" class="mx-auto d-block" height="40" width="40"/>
                 <h3 class="text-center">Inspired by our chef's travels thoughout southeast Asia.</h3>
                 <p class="text-center">Explore our Texas made Asian cuisine and leave your own reviews!</p>
             </div>
-            <div class="col card" style="width: 18rem;">
-                <img class="card-img-top" src="img/ronin-logo.jpeg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Our Menu!</h5>
-                  <a href="menu.html" class="btn btn-secondary">Check it out!</a>
-                </div>
+            <div class="col-12 text-center" style="width: 18rem;">
+                <a class="btn btn-danger btn-lg" role="button" id="menuButton">Menu</a>
+                <a class="btn btn-danger btn-lg" role="button" id="cateringButton">Catering</a>
               </div>
+        </div>
+
+        <div class="row dark-row-content">
+            <div class="col-12">
+        <h1 class="text-center fancy-text">Featured Menu Items</h1>
+        <img src="img/chopsticks.png" class="mx-auto d-block mb-3" height="40" width="40"/>
+            </div>
+          <div class="col-sm-3 m-sm-auto">
+
+            <img alt="image" class="img-fluid rounded-circle" src="/img/ladyDragon.png">    
+
+            <h4>The Lady Dragon</h4>
+
+            <p>Founder</p>
+
+          </div>
+          <div class="col-sm-3 m-sm-auto">
+
+            <img alt="image" class="img-fluid rounded-circle" src="/img/ladyDragon.png">    
+
+            <h4>The Lady Dragon</h4>
+
+            <p>Founder</p>
+
+          </div>
+          <div class="col-sm-3 m-sm-auto">
+
+            <img alt="image" class="img-fluid rounded-circle" src="/img/ladyDragon.png">    
+
+            <h4>The Lady Dragon</h4>
+
+            <p>Founder</p>
+
+          </div>
         </div>
 
         <div class="row row-content">
@@ -108,23 +149,47 @@
                 <img src="img/ronin-chef.jpeg" class="img-fluid rounded-circle img-responsive img-chef" alt="A picture of the chef at Roaming Ronin."/>
             </div>
             <div class="col media-body">
-                <h2 class="text-center">Meet Our Chef!</h2>
+                <h1 class="text-center fancy-text mt-2">Meet Our Chef!</h1>
                     <h4 class="text-center">Chef Edward Warren Jr.</h4>
-                    <h5 class="text-center">A vagrant samurai without a master</h5>
                     <p class="text-center">Executive chef and Owner Eddie Warren Jr is an Escoffier alumni and US Navy Veteran who was stationed overseas in Japan. It was through his travels throughout Southeast Asia that inspired the concept for Ronin. You can find pride in Community and culture through the food that locals sell on the streets around the globe. We at Ronin are proud and excited to bring that street food experience to you through our fun and creative menu fusing cuisines from all over. We Are Ronin. Asian inspired…Texas made.</p>
               </div>
         </div>
 
-        <div class="row row-content">
+        <div class="row dark-row-content review-row">
             <div class="col">
-            <h2 class="text-center">Reviews</h2>
+            <h1 class="text-center fancy-text">Reviews</h1>
+            <img src="img/chopsticks.png" class="mx-auto d-block" height="40" width="40"/>
             <h3 class="text-center">What the people say:</h3>
-            <p class="text-center">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+            <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faimme.brackenridge.7%2Fposts%2Fpfbid02jGqZi8jmgMeF7dkTA64L1xeLKm9wpLJcevrzHWsAoNMvXUfbvW2rj8cGD7yoqmQ2l&width=500&show_text=true&height=261&appId" width="500" height="261" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjosh.gordo.92%2Fposts%2Fpfbid02jLSSjQojHHar5KPKs2GSsY1Tg4GyFBn5G55QzcNMDG2W1UJJBxBJXpUWNGemJ4npl&show_text=true&width=500" width="500" height="186" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmelissa.chappell.758%2Fposts%2Fpfbid0xgrCEWtfwZAX32nbvCZVagjur27w9ecLQqmBytqSQjbRo6nvn2RoyqkUSgvrjDv7l&show_text=true&width=500" width="500" height="246" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpatrickstan.guadalupe%2Fposts%2Fpfbid032FukZYyChKiqY4ZjooV2YE81SM8Xbq51BmhcE8kvvHf2bPrkZzjKCLMLMsD8ZtMcl&show_text=true&width=500" width="500" height="185" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhanna1415%2Fposts%2Fpfbid02V96zLGDiTkmLR5opqKWXJirjmrLdm47efaJfE29rQbqjmWKbxNHDfQt7E3xfT8Z5l&show_text=true&width=500" width="500" height="185" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjosh.gordo.92%2Fposts%2Fpfbid02jLSSjQojHHar5KPKs2GSsY1Tg4GyFBn5G55QzcNMDG2W1UJJBxBJXpUWNGemJ4npl&show_text=true&width=500" width="500" height="186" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsidney.castillo.330%2Fposts%2Fpfbid069edkuogW1Mkv8ooUjBowde6vZ68FuwrqEFnKyALvmidWdpUpC3Z37SsVnh5QECUl&show_text=true&width=500" width="500" height="188" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -152,7 +217,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 mt-5 copy-right-footer">
+            <div class="col-xs-12 mt-5 copy-right-footer d-flex align-content-center">
                 <p class="text-center"><i class="fa-regular fa-copyright"></i>2022ALL Rights Reserved. Development by <a href="#">Roaming Ronin</a></a></p>
             </div>
         </div>
